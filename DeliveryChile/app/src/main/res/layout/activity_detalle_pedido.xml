@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".repartidor.detallePedidoActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+        android:background="@color/teal_200"
+        android:textStyle="bold|italic"
+        android:text="Detalle pedido"
+        />
+
+    <TextView
+        android:id="@+id/id_pedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:hint="ID_PEDIDO"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="140dp"
+        android:textSize="30dp"
+        android:hint="USUARIO"
+        />
+
+    <TextView
+        android:id="@+id/tienda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:textSize="30dp"
+        android:hint="TIENDA"
+        />
+
+    <ListView
+        android:id="@+id/productos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="260dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="220dp"
+        />
+
+    <TextView
+        android:id="@+id/direccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="520dp"
+        android:textSize="30dp"
+        android:hint="DIRECCION"
+        />
+
+    <TextView
+        android:id="@+id/valor_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="580dp"
+        android:textSize="30dp"
+        android:hint="VALOR TOTAL"
+        />
+
+    <TextView
+        android:id="@+id/estado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="640dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="30dp"
+        android:hint="ESTADO"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="reparto"
+        android:layout_gravity="left"
+        android:layout_marginTop="640dp"
+        android:layout_marginLeft="200dp"
+        />
+
+</FrameLayout>
