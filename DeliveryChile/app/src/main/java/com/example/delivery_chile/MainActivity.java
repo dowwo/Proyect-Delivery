@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     EditText editEmail, editPassword;
     Button btnIngresar;
 
-    String URL= "http://delivery-chile.cl/loginMovil";
+    //String URL= "http://delivery-chile.cl/loginMovil";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,11 +44,15 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    //SE GENERA UN ERROR :(
     public void login() {
-        StringRequest request = new StringRequest(Request.Method.POST, URL,
+        StringRequest request = new StringRequest(Request.Method.POST, "http://delivery-chile.cl/loginMovil",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
+
+                        //Toast.makeText(getApplicationContext(), "this is response : " + response, Toast.LENGTH_LONG).show();
+
                         if (response.contains("1")){
                             startActivity(new Intent(getApplicationContext(), repartidorActivity.class));
                         }else{
