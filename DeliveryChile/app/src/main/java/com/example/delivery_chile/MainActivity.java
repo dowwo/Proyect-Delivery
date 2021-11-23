@@ -46,12 +46,13 @@ public class MainActivity extends AppCompatActivity {
 
     //SE GENERA UN ERROR :(
     public void login() {
-        StringRequest request = new StringRequest(Request.Method.POST, "http://delivery-chile.cl/loginMovil",
+        StringRequest request = new StringRequest(Request.Method.POST, "http://delivery-chile.cl/login",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
 
                         //Toast.makeText(getApplicationContext(), "this is response : " + response, Toast.LENGTH_LONG).show();
+
 
                         if (response.contains("1")){
                             startActivity(new Intent(getApplicationContext(), repartidorActivity.class));
